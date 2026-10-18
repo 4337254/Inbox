@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Mills Start Lab",
+      "hasCanvas": true,
+      "bodyTextLen": 627,
+      "bodyTextHash": "4aa847f962cf72a4ef2ffdab533280b6067617d9774334150cbd2b222ae66578",
+      "bodyTextPrefix": "GLENN MILLS 起跑实验室 评分 4.5 重做这次 0 fps 0.0 ms 姿态模型就绪 点「导入视频」或把文件拖进画",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Mills Start Lab",
+      "hasCanvas": true,
+      "bodyTextLen": 480,
+      "bodyTextHash": "c27cab968c5b77e26df1e2dd4452a0ab19df36852e1c3d93ada7be0a2aab93e3",
+      "bodyTextPrefix": "GLENN MILLS 起跑实验室 0 fps 0.0 ms 姿态模型就绪 横屏观看：只锁人体 · 骨骼贴关节 · 不跟框 点「",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

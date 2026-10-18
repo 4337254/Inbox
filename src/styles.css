@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-background: #0c0e12;
+  --color-foreground: #e8eaee;
+  --color-card: #141820;
+  --color-card-foreground: #e8eaee;
+  --color-muted: #1a2029;
+  --color-muted-foreground: #8b939e;
+  --color-border: #2a313c;
+  --color-primary: #d7dde6;
+  --color-primary-foreground: #0c0e12;
+  --color-secondary: #1a2029;
+  --color-secondary-foreground: #e8eaee;
+  --color-accent: #8eabc4;
+  --color-accent-foreground: #0c0e12;
+  --color-destructive: #c4544a;
+  --color-ring: #8eabc4;
+  --color-ok: #7dba9a;
+  --color-warn: #c4a574;
+  --color-track: #16141a;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius: 12px;
+
+  --shadow-border: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100dvh;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.lab-stage-frame {
+  aspect-ratio: 16 / 9;
+  min-height: 72vh;
+  will-change: transform;
+}
+
+@media (orientation: landscape) and (max-height: 540px) {
+  .lab-shell {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  .lab-header {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .lab-header h1 {
+    font-size: 1.1rem;
+  }
+  .lab-main {
+    grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.88fr);
+    padding: 0.5rem 0.75rem 0.75rem;
+    gap: 0.75rem;
+    min-height: 0;
+  }
+  .lab-stage {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+  }
+  .lab-stage-frame {
+    aspect-ratio: auto;
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+  }
+}
